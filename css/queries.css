@@ -586,4 +586,8 @@
     right: 0;
     transform: translate(250%, 50%);
   }
+
+  .amine {
+    margin: 0 auto;
+  }
 }
