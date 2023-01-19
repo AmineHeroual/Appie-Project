@@ -1,3 +1,7 @@
+//////////////////////
+// writed with Amine Heroual...
+// ///////////////////
+
 const btnNav = document.querySelector(".btn-mobile-nav");
 
 const headerEl = document.querySelector(".header");
