@@ -519,6 +519,7 @@
 
 .amine {
   position: relative;
+  margin-left: 11rem;
 }
 
 .amine::after {
