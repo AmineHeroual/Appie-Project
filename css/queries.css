@@ -1,0 +1,589 @@
+/* ********************************* */
+/* BELOW 1344px   (smaller desktops) */
+/* ********************************* */
+
+@media (max-width: 84em) {
+  .main-nav-list {
+    margin-right: 20rem;
+  }
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+
+  .videos {
+    gap: 2rem;
+  }
+}
+
+/* ********************************* */
+/* BELOW 1200px   (Landscape Tablets) */
+/* ********************************* */
+
+@media (max-width: 75em) {
+  .main-nav-list {
+    margin-right: 10rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+
+  .heading-secondary {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+
+  .carts-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+  }
+
+  .cart {
+    width: 76%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 6.8rem;
+    margin: 0 auto;
+  }
+
+  .option-img {
+    width: 90%;
+  }
+
+  .apps-container {
+    padding: 20rem 10rem;
+  }
+
+  .pricing-plan {
+    width: 36rem;
+    height: 52rem;
+  }
+
+  .pricing-plan--juicy {
+    height: 56rem;
+  }
+
+  .btn-top {
+    transform: translate(50%, 50%);
+  }
+}
+
+/* ********************* */
+/* BELOW 944px (Tablets) */
+/* ********************* */
+
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary,
+  .hero-description,
+  .heading-secondary {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 40%;
+    margin-top: 100rem;
+  }
+  .heading-secondary-adventages {
+    padding: 0 24rem;
+  }
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .features-box {
+    flex-direction: column;
+  }
+
+  .carts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cart {
+    text-align: center;
+    padding: 0 auto;
+  }
+
+  .option-container {
+    grid-template-columns: 1fr;
+  }
+
+  .option-img {
+    display: none;
+  }
+
+  .option-text-box {
+    text-align: center;
+  }
+
+  .option-box {
+    flex-direction: column;
+
+    gap: 4rem;
+  }
+
+  .option-text {
+    text-align: left;
+  }
+
+  .option-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .heading-secondary-adventages {
+    padding: 0 2rem;
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+
+  .adventage {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+
+  .adventage-content span {
+    font-size: 1.8rem;
+  }
+
+  .adventage-content p {
+    font-size: 1.4rem;
+  }
+
+  .adventage-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .adventages-img {
+    width: 80%;
+  }
+
+  .awords {
+    flex-wrap: wrap;
+    padding: 0 15rem;
+    row-gap: 7rem;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .video-img {
+    margin: 0 auto;
+  }
+
+  .video-thumb,
+  .video-slide {
+    width: 100%;
+  }
+
+  .slide-container {
+    flex-direction: column;
+  }
+
+  .slide-description h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-right: 2rem;
+  }
+
+  .slide-description p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 2rem auto;
+  }
+
+  .btn--slide:link,
+  .btn--slide:visited {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  .slide--btns button {
+    display: none;
+  }
+
+  .plan-container {
+    grid-template-columns: 1fr;
+    padding: 0 auto;
+  }
+
+  .pricing-plan {
+    margin: 0 auto;
+  }
+
+  /* mobile navigation */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(235, 164, 164, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-nav:link,
+  .btn-nav:visited {
+    font-size: 1.4rem;
+    margin-left: 20rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+    margin: 0 auto;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .hiddin-hero {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+/* ************************ */
+/* BELOW 944 (small Tablets) */
+/* ************************** */
+
+@media (max-width: 44em) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hero-img {
+    margin-top: 100rem;
+  }
+  .heading-primary,
+  .hero-description {
+    text-align: left;
+  }
+
+  .btn-nav:link,
+  .btn-nav:visited {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .heading-primary {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.4rem;
+  }
+
+  .email-box {
+    padding: 1px 20px;
+  }
+
+  .icon {
+    /* width: 2rem;
+    height: 2rem;
+     */
+
+    font-size: 1.8rem;
+  }
+
+  .users-app {
+    margin-top: 2rem;
+  }
+
+  .users-img {
+    display: flex;
+
+    padding: 0 3rem 0 8rem;
+  }
+
+  .user-img {
+    height: 3.8rem;
+    width: 3.8rem;
+    border-radius: 50%;
+    margin-right: -6.6rem;
+
+    border: 2px solid #fff;
+  }
+
+  /* --------------------- */
+
+  .heading-tertiary {
+    text-align: center;
+  }
+
+  .btn--feature:link,
+  .btn--feature:visited {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+  }
+
+  .cart {
+    padding: 3rem 1rem;
+
+    margin: 0 auto;
+  }
+
+  .cart-text {
+    font-size: 1.4rem;
+  }
+
+  .cart-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    padding: 1.5rem;
+  }
+
+  .email-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .email-input {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+
+  .feedback {
+    font-size: 1.2rem;
+  }
+
+  .rate {
+    font-size: 2.4rem;
+  }
+
+  .awords {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .slide {
+    gap: 3rem;
+    padding: 0 5rem;
+  }
+
+  .slide-img-box {
+    grid-column: 1 / -1;
+  }
+
+  .slide-img {
+  }
+
+  .slide-content-box {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .slider-footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-content {
+    font-size: 1.4rem;
+  }
+
+  .apps-container {
+    padding: 20rem 3rem;
+  }
+
+  .heading-secondary--option,
+  .app-description {
+    text-align: left;
+  }
+
+  .heading-secondary--option {
+    font-size: 2.2rem;
+  }
+
+  .app-description {
+    font-size: 1.1rem;
+  }
+
+  .app-description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  /* download buttons */
+  .btns-download {
+    padding-top: 3px;
+    display: flex;
+    align-self: center;
+
+    gap: 1rem;
+  }
+
+  .btn-download {
+    width: 14rem;
+    height: 6rem;
+  }
+
+  .app-logo {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .btn-download-text {
+    padding: 3px;
+  }
+  .download-for {
+    font-size: 1rem;
+  }
+  .os {
+    font-size: 1.6rem;
+  }
+  /* ------------------ */
+
+  .heading-secondary-platforms {
+    padding: 0 5rem;
+    font-size: 3.4rem;
+  }
+
+  .platforms-one,
+  .platforms-two {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .logo-col,
+  .company-col,
+  .support-col,
+  .get-in-touch {
+    align-items: center;
+  }
+
+  .logo-col span {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .company-col h3,
+  .support-col h3,
+  .get-in-touch h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .company-col span,
+  .support-col span {
+    font-size: 1.1rem;
+    line-height: 0.6;
+  }
+
+  .support span,
+  .phone span,
+  .location span {
+    font-size: 1.2rem;
+  }
+
+  .support ion-icon,
+  .phone ion-icon {
+    font-size: 1.6rem;
+  }
+
+  .location ion-icon {
+    font-size: 1.8rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .download-for {
+    font-size: 1.1rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+
+  .btn-top {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: none;
+    padding: 1rem;
+
+    top: 0;
+    right: 0;
+    transform: translate(250%, 50%);
+  }
+}
