@@ -205,7 +205,7 @@
   }
 
   .slide-description p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.4;
     margin: 2rem auto;
   }
@@ -295,6 +295,10 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+  }
+
+  .slide-content {
+    text-align: center;
   }
 }
 
@@ -428,10 +432,14 @@
   .slide {
     gap: 3rem;
     padding: 0 5rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .slide-img-box {
     grid-column: 1 / -1;
+    justify-content: center;
+    margin: 0 -4rem;
   }
 
   .slide-img {
@@ -439,7 +447,8 @@
 
   .slide-content-box {
     grid-column: 1 / -1;
-    text-align: center;
+    justify-content: center;
+    margin: 0 -8rem;
   }
 
   .slider-footer {
@@ -473,6 +482,40 @@
     line-height: 1.4;
   }
 
+  /* ---------------video description------------- */
+
+  .slide-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-description h2 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    /* margin-right: 2rem; */
+    margin: 2rem -5rem 1rem -5rem;
+  }
+
+  .slide-description p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    margin: 0.5rem -2rem;
+  }
+
+  .btn--slide:link,
+  .btn--slide:visited {
+    font-size: 1.1rem;
+    padding: 1rem 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0.5rem;
+  }
+  /* ============================= */
+
   /* download buttons */
   .btns-download {
     padding-top: 3px;
@@ -505,7 +548,9 @@
 
   .heading-secondary-platforms {
     padding: 0 5rem;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
+    margin: 1rem -6rem;
+    line-height: 1.4;
   }
 
   .platforms-one,
